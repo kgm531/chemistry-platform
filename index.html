@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة الموسوعة</title>
+    <link rel="stylesheet" href="style .css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <header class="navbar">
+        <div class="desktop-nav">
+            <div class="nav-right">
+                <nav class="nav-links">
+                    <a href="#about">نبذة عنا</a>
+                    <a href="#contact">معلومات التواصل</a>
+                    <a href="#features">مميزات الموقع</a>
+                </nav>
+            </div>
+            <div class="nav-center">
+                  <a href="index.html"><img src="img/logo.png" alt="منصة الكيمياء لوجو" class="logo"></a>
+
+            </div>
+            <div class="nav-left">
+    <a href="signup.html" class="btn btn-primary">إنشاء حساب</a>
+    <a href="login.html" class="btn btn-secondary">تسجيل الدخول</a>
+    <button class="btn btn-secondary btn-toggle-mode" aria-label="Toggle dark and light mode">
+        <i class="fas fa-sun"></i>
+    </button>
+</div>
+
+        </div>
+
+        <div class="mobile-nav">
+            <div class="top-row">
+                <nav class="nav-links">
+                    <a href="#about">نبذة عنا</a>
+                    <a href="#contact">معلومات التواصل</a>
+                    <a href="#features">مميزات الموقع</a>
+                </nav>
+            </div>
+            <div class="middle-row">
+                <a href="page2.html" target="_blank">
+  <img src="img/logo.png" alt="منصة الكيمياء لوجو" class="logo">
+</a>
+
+                <button class="mode-toggle" aria-label="Toggle dark and light mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            <div class="bottom-row">
+  <a href="https://google.com" class="btn btn-primary">إنشاء حساب</a>
+  <a href="https://youtube.com" class="btn btn-secondary">تسجيل الدخول</a>
+</div>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="about"  class="hero-section">
+            <div class="hero-content">
+                <h1 class="typing">الموسوعة <br> في الكيمياء</h1>
+                <p>الأستاذ محمد عيد ، أحد أبرز معلمي الكيمياء بالثانوية العامة في مصر، منهجه يعتمد على التبسيط والتحليل والتدريب العملي لضمان أعلى درجات الفهم والثقة للطلاب في مادة الكيمياء.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">ابدأ الآن رحلتك</button>
+                    <button class="btn btn-secondary">شاهد فيديو تعريفي <i class="fas fa-play-circle"></i></button>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+  <div class="hero-image-bg"></div> <!-- الباكجراوند الدائري -->
+  <img src="img/ph2.png" alt="صورة الأستاذ محمد عيد" class="hero-image">
+</div>
+
+        </section>
+
+<!--المميزات-->
+      <section id="features" class="features-section">
+  <h2 class="section-title">مميزات منصتنا</h2>
+  <div class="features-grid container">
+
+    <!-- الكارد 1 -->
+    <div class="feature-item">
+      <div class="feature-inner">
+        <!-- الوجه الأمامي (صورة + نص) -->
+        <div class="feature-front">
+          <img src="img/f1.png" alt="شروحات فيديو" />
+          <div class="front-text">شروحات فيديو تفاعلية</div>
+        </div>
+        <!-- الوجه الخلفي (الكلام) -->
+        <div class="feature-back">
+          <i class="fas fa-video feature-icon"></i>
+          <h3>شروحات فيديو تفاعلية</h3>
+          <p>دروس فيديو عالية الجودة تغطي جميع جوانب المنهج بطريقة مبسطة وتفاعلية.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكارد 2 -->
+    <div class="feature-item">
+      <div class="feature-inner">
+        <div class="feature-front">
+          <img src="img/f2.webp" alt="ملازم وكتب رقمية" />
+          <div class="front-text">ملازم وكتب رقمية متجددة</div>
+        </div>
+        <div class="feature-back">
+          <i class="fas fa-book-open feature-icon"></i>
+          <h3>ملازم وكتب رقمية متجددة</h3>
+          <p>محتوى تعليمي شامل ومرتب لضمان سهولة الوصول للمعلومات والمراجعة الفعالة.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكارد 3 -->
+    <div class="feature-item">
+      <div class="feature-inner">
+        <div class="feature-front">
+          <img src="img/f3.png" alt="متابعة" />
+          <div class="front-text">متابعة وتقييم مستمر</div>
+        </div>
+        <div class="feature-back">
+          <i class="fas fa-chart-line feature-icon"></i>
+          <h3>متابعة وتقييم مستمر</h3>
+          <p>اختبارات دورية وتقارير أداء مفصلة لمتابعة تقدم الطالب وتحديد نقاط التحسين.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكارد 4 -->
+    <div class="feature-item">
+      <div class="feature-inner">
+        <div class="feature-front">
+          <img src="img/f4.png" alt="مجتمع طلابي" />
+          <div class="front-text">مجتمع طلابي داعم</div>
+        </div>
+        <div class="feature-back">
+          <i class="fas fa-users feature-icon"></i>
+          <h3>مجتمع طلابي داعم</h3>
+          <p>تفاعل مع الطلاب الآخرين والمدرسين من خلال مجتمعنا التعليمي النشط.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكارد 5 -->
+    <div class="feature-item">
+      <div class="feature-inner">
+        <div class="feature-front">
+          <img src="img/f5.png" alt="نتائج متميزة" />
+          <div class="front-text">نتائج متميزة</div>
+        </div>
+        <div class="feature-back">
+          <i class="fas fa-award feature-icon"></i>
+          <h3>نتائج متميزة</h3>
+          <p>مساعدة الطلاب على تحقيق التفوق والنجاح في الكيمياء.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكارد 6 -->
+    <div class="feature-item">
+      <div class="feature-inner">
+        <div class="feature-front">
+          <img src="img/f6.png" alt="تعليم حديث" />
+          <div class="front-text">تجربة تعليمية حديثة</div>
+        </div>
+        <div class="feature-back">
+          <i class="fas fa-laptop-code feature-icon"></i>
+          <h3>تجربة تعليمية حديثة</h3>
+          <p>منصة تفاعلية وسهلة الاستخدام مع أحدث التقنيات التعليمية.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+        <!--الباقات-->
+        <section id="packages" class="packages-section">
+            <div class="packages-header">
+      <!-- لمبة شمال -->
+      <svg class="lamp" viewBox="0 0 64 100" xmlns="http://www.w3.org/2000/svg">
+        <ellipse class="lamp-light" cx="32" cy="30" rx="22" ry="28"/>
+        <ellipse class="lamp-glass" cx="32" cy="30" rx="22" ry="28"/>
+        <rect x="25" y="55" width="14" height="25" fill="#666"/>
+        <rect x="27" y="80" width="10" height="10" fill="#444"/>
+      </svg>
+
+      <!-- العنوان -->
+      <h2>أحدث باقاتنا</h2>
+
+      <!-- لمبة يمين -->
+      <svg class="lamp" viewBox="0 0 64 100" xmlns="http://www.w3.org/2000/svg">
+        <ellipse class="lamp-light" cx="32" cy="30" rx="22" ry="28"/>
+        <ellipse class="lamp-glass" cx="32" cy="30" rx="22" ry="28"/>
+        <rect x="25" y="55" width="14" height="25" fill="#666"/>
+        <rect x="27" y="80" width="10" height="10" fill="#444"/>
+      </svg>
+    </div>
+
+            <div class="packages-grid container">
+  <!-- الباقة الأولى -->
+  <div class="package-card" data-animation="fade-in-up">
+    <div class="package-banner">
+      <img src="package1.png" alt="باقة الثلاث شهور">
+    </div>
+    <div class="package-body">
+      <h3 class="package-title">باقة الثلاث شهور</h3>
+      <p class="package-desc">شهرين بسعر 500 جنيه مصري، وتتضمن باقة الثالثة الثانوي (الدفعات الأولى).</p>
+      <div class="package-pricing">
+        <span class="old-price">700 جنيه</span>
+        <span class="new-price">500 جنيه</span>
+      </div>
+      <div class="package-actions">
+        <a href="#" class="btn btn-secondary">الدخول للكورس</a>
+        <a href="#" class="btn btn-primary">الإشتراك في الكورس</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- الباقة الثانية -->
+  <div class="package-card" data-animation="fade-in-up" data-delay="0.2">
+    <div class="package-banner">
+      <img src="img/.png" alt="باقة المراجعة النهائية">
+    </div>
+    <div class="package-body">
+      <h3 class="package-title">باقة المراجعة النهائية</h3>
+      <p class="package-desc">مراجعات شاملة لجميع أجزاء المنهج مع حل جميع الامتحانات السابقة.</p>
+      <div class="package-pricing">
+        <span class="old-price">350 جنيه</span>
+        <span class="new-price">200 جنيه</span>
+      </div>
+      <div class="package-actions">
+        <a href="#" class="btn btn-secondary">الدخول للكورس</a>
+        <a href="#" class="btn btn-primary">الإشتراك في الكورس</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- الباقة الثالثة -->
+  <div class="package-card" data-animation="fade-in-up" data-delay="0.4">
+    <div class="package-banner">
+      <img src="package3.png" alt="باقة ترم كامل">
+    </div>
+    <div class="package-body">
+      <h3 class="package-title">باقة ترم كامل</h3>
+      <p class="package-desc">اشتراك كامل للترم الثاني يتضمن شروحات وواجبات واختبارات دورية.</p>
+      <div class="package-pricing">
+        <span class="old-price">950 جنيه</span>
+        <span class="new-price">750 جنيه</span>
+      </div>
+      <div class="package-actions">
+        <a href="#" class="btn btn-secondary">الدخول للكورس</a>
+        <a href="#" class="btn btn-primary">الإشتراك في الكورس</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- الباقة الرابعة -->
+  <div class="package-card" data-animation="fade-in-up" data-delay="0.6">
+    <div class="package-banner">
+      <img src="package4.png" alt="باقة الحصص الفردية">
+    </div>
+    <div class="package-body">
+      <h3 class="package-title">باقة الحصص الفردية</h3>
+      <p class="package-desc">جلسات فردية مع الأستاذ لحل المشكلات والإجابة على الاستفسارات.</p>
+      <div class="package-pricing">
+        <span class="old-price">150 جنيه</span>
+        <span class="new-price">100 جنيه / ساعة</span>
+      </div>
+      <div class="package-actions">
+        <a href="#" class="btn btn-secondary">الدخول للكورس</a>
+        <a href="#" class="btn btn-primary">الإشتراك في الكورس</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </section>
+
+
+        <!--السنوات الدراسية-->
+        <section class="years-section">
+  <div class="container">
+    <h2 class="years-title">السنين الدراسية</h2>
+    <div class="years-cards">
+
+      <div class="year-card-wrap">
+        <div class="year-card year1"></div>
+        <div class="card-buttons">
+          <a href="learn.html" class="btn btn-primary small">ابدأ التعلم</a>
+          <a href="signup.html" class="btn btn-secondary small">إنشاء حساب</a>
+        </div>
+      </div>
+
+      <div class="year-card-wrap">
+        <div class="year-card year2"></div>
+        <div class="card-buttons">
+          <a href="learn.html" class="btn btn-primary small">ابدأ التعلم</a>
+          <a href="signup.html" class="btn btn-secondary small">إنشاء حساب</a>
+        </div>
+      </div>
+
+      <div class="year-card-wrap">
+        <div class="year-card year3"></div>
+        <div class="card-buttons">
+          <a href="learn.html" class="btn btn-primary small">ابدأ التعلم</a>
+          <a href="signup.html" class="btn btn-secondary small">إنشاء حساب</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--الحجز-->
+<section id="annual-subscription" class="annual-subscription-section">
+    <div class="subscription-container">
+        <h2>حجز السنة الجديدة!</h2>
+        <p class="subscription-text-1">حجز خاص بطلاب السنتر </p>
+        <p class="subscription-text-2">استفد بالسنة الدراسية الجديدة واحجز دلوقتى في السنتر عشان تقدر تدخل علي المنصة براحتك .</p>
+        <button class="btn btn-primary">احجز دلوقتى</button>
+    </div>
+</section>
+
+
+        <section class="testimonials-section">
+            <h2 class="section-title">ماذا يقول طلابنا عنا؟</h2>
+            <div class="testimonial-grid container">
+                <div class="testimonial-card" data-animation="fade-in-up">
+                    <p>"بفضل الأستاذ محمد، قدرت أفهم الكيمياء وأجيب فيها أعلى درجة. الشرح بسيط وممتاز!"</p>
+                    <h4>- أحمد سعيد <br> (طالب بالثانوية العامة)</h4>
+                </div>
+                <div class="testimonial-card" data-animation="fade-in-up" data-delay="0.2">
+                    <p>"منصة ممتازة ومنظمة جداً. ساعدتني على تنظيم وقتي ومراجعة الدروس بسهولة وفعالية."</p>
+                    <h4>- فاطمة محمد <br> (طالبة متفوقة)</h4>
+                </div>
+                <div class="testimonial-card" data-animation="fade-in-up" data-delay="0.4">
+                    <p>"أنصح بها كل طالب يرغب في التفوق بالكيمياء. المحتوى شامل والأستاذ مبدع في الشرح."</p>
+                    <h4>- خالد محمود <br> (طالب ثانوي)</h4>
+                </div>
+            </div>
+        </section>
+
+<!--questions-->
+        <section class="faq">
+  <h2 class="faq-title">الأسئلة الشائعة</h2>
+  <p class="faq-subtitle">إجابات على أكثر الأسئلة شيوعاً حول المنصة والخدمات.</p>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>كيف يمكنني التسجيل في المنصة؟</span>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>يمكنك التسجيل بسهولة من خلال الضغط على زر "إنشاء حساب الآن" واتباع الخطوات المطلوبة.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>هل الكورسات متاحة لجميع المراحل الدراسية؟</span>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>نعم، المنصة تقدم كورسات متنوعة تغطي مختلف المراحل الدراسية.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>كيف يمكنني التواصل مع المدرس؟</span>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>يمكنك التواصل مع المدرس من خلال الرسائل المباشرة داخل المنصة أو عبر قنوات الدعم.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>هل يوجد دعم فني؟</span>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>نعم، لدينا فريق دعم فني متاح للرد على استفساراتك ومساعدتك في أي مشكلة.</p>
+    </div>
+  </div>
+</section>
+
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">تواصل معنا الآن</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="الاسم الكامل" required>
+                <input type="email" placeholder="البريد الإلكتروني" required>
+                <textarea placeholder="رسالتك" required></textarea>
+                <button type="submit" class="btn btn-primary">إرسال الرسالة <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 منصة الموسوعة جميع الحقوق محفوظة. <br> ❤️تم عمل هذه المنصة بواسطة KGM Team❤️</p>
+        <br>
+        <div class="social-icons">
+            <a href="https://wa.me/01061922515" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/share/1Yi2ESoyHw/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="http://www.youtube.com/@MrMuhammadEidChemistry" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/muhammad_eid_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <div class="fixed-sidebar">
+        <a href="tel:+201000000000" class="phone" title="اتصل بنا">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/+201000000000" target="_blank" class="whatsapp" title="تواصل واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" class="scroll-up" title="للأعلى">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <a href="#contact" class="scroll-down" title="للأسفل">
+            <i class="fas fa-arrow-down"></i>
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            const modeToggleBtn = document.querySelector('.btn-toggle-mode');
+            const mobileModeToggle = document.querySelector('.mobile-nav .mode-toggle');
+            const navbar = document.querySelector('.navbar');
+
+            const setMode = (mode) => {
+                if (mode === 'light') {
+                    body.classList.add('light-mode');
+                    if (modeToggleBtn) modeToggleBtn.querySelector('i').className = 'fas fa-moon';
+                    if (mobileModeToggle) mobileModeToggle.querySelector('i').className = 'fas fa-moon';
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    body.classList.remove('light-mode');
+                    if (modeToggleBtn) modeToggleBtn.querySelector('i').className = 'fas fa-sun';
+                    if (mobileModeToggle) mobileModeToggle.querySelector('i').className = 'fas fa-sun';
+                    localStorage.setItem('theme', 'dark');
+                }
+            };
+
+            const savedTheme = localStorage.getItem('theme');
+            setMode(savedTheme);
+
+            if (modeToggleBtn) {
+                modeToggleBtn.addEventListener('click', () => {
+                    const currentTheme = body.classList.contains('light-mode') ? 'dark' : 'light';
+                    setMode(currentTheme);
+                });
+            }
+
+            if (mobileModeToggle) {
+                mobileModeToggle.addEventListener('click', () => {
+                    const currentTheme = body.classList.contains('light-mode') ? 'dark' : 'light';
+                    setMode(currentTheme);
+                });
+            }
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 80) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const delay = entry.target.dataset.delay || 0;
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, delay * 1000);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('[data-animation]').forEach(element => {
+                observer.observe(element);
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.hero-content').style.opacity = '1';
+                document.querySelector('.hero-image-wrapper').style.opacity = '1';
+            });
+
+            document.querySelectorAll('.fixed-sidebar a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const href = this.getAttribute('href');
+                    if (href === '#') {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                        return;
+                    }
+                    if (href.startsWith('#')) {
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            });
+        });
+
+        // تشغيل/إيقاف اللمبة بالضغط
+    document.querySelectorAll('.bulb').forEach(bulb => {
+      bulb.addEventListener('click', () => {
+        bulb.classList.toggle('on');
+      });
+    });
+
+    // إضاءة تلقائية (تطفي وتنور)
+    setInterval(() => {
+      document.querySelectorAll('.bulb').forEach(bulb => {
+        bulb.classList.toggle('on');
+      });
+    }, 1500);
+
+
+    // الاسئلة
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  item.querySelector(".faq-question").addEventListener("click", () => {
+    item.classList.toggle("active");
+
+    // يغير علامة + و -
+    const toggle = item.querySelector(".faq-toggle");
+    toggle.textContent = item.classList.contains("active") ? "−" : "+";
+  });
+});
+
+    </script>
+</body>
+</html>
