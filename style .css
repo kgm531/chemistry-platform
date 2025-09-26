@@ -669,8 +669,8 @@
   }
 
   .hero-image {
-    width: 100%;
-    height: 100%;
+    width: 88%;
+    height: 90%;
     border-radius: 50%;      /* الصورة دايرة */
     object-fit: cover;
     margin: 0 auto;
@@ -926,18 +926,21 @@
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-  gap: 2rem;
-  justify-items: center; /* يخلي الكارد في النص */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  text-align: center;
+  padding-top: 3rem;
+  justify-content: center; /* يخلي الكروت في النص */
 }
 
 .feature-item {
   width: 100%;
-  max-width: 420px; /* أكبر عرض للكارد */
-    aspect-ratio: 1/1; /* يفضل مربع */
-  margin: 0 auto;    /* يثبت الكارد في النص */
+  max-width: 360px;   /* حجم مناسب على الشاشات الكبيرة */
+  aspect-ratio: 1/1;  /* يفضل مربع */
+  margin: 0 auto;     /* يفضل ثابت في النص */
+  perspective: 1000px;
+  height: auto;
 }
-
 
 .feature-inner {
   position: relative;
@@ -1004,6 +1007,7 @@
   transform: translateY(100%);
   transition: all 0.6s ease;
   border-radius: var(--border-radius);
+  overflow-y: auto; /* لو الكلام طويل */
 }
 
 .feature-item:hover .feature-back {
@@ -1030,23 +1034,49 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .features-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 400px) {
   .feature-item {
-    max-width: 100%; /* الكارد يصغر تدريجيًا مع الشاشات الصغيرة جدًا */
+    max-width: 340px;
+    height: 320px;
+  }
+  .front-text {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+  .feature-back h3 {
+    font-size: 1.4rem;
+  }
+  .feature-back p {
+    font-size: 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .features-grid {
+    grid-template-columns: 1fr;   /* كارد واحد */
+    justify-items: center;        /* في النص */
+  }
+
+  .feature-item {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .feature-back h3 {
+    font-size: 1.2rem;
+  }
+  .feature-back p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .feature-item {
+    max-width: 280px;
+    height: 280px;
+  }
+}
+
+
 
 
 
@@ -1070,16 +1100,16 @@
 /* شبكة الكاردز */
 .years-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  justify-items: center; /* يخلي الكارد في النص */
+  justify-content: center; /* تثبيت الكروت في النص */
 }
 
-/* الكارد */
+/* الكارد (صورة خلفية) */
 .year-card {
   width: 100%;
-  max-width: 500px;       /* أكبر عرض للكارد */
-  height: 220px;          /* ارتفاع ثابت */
+  max-width: 360px;   /* نفس حجم كروت features */
+  aspect-ratio: 1/1;  /* مربع */
   border-radius: var(--border-radius);
   background-size: cover;
   background-position: center;
@@ -1089,6 +1119,7 @@
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 1s forwards;
+  margin: 0 auto; /* يخليها في النص */
 }
 
 .year-card:hover {
@@ -1096,7 +1127,7 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 12px var(--glow-color);
 }
 
-/* صور */
+/* أمثلة صور */
 .year1 { background-image: url('img/g1.jpg'); }
 .year2 { background-image: url('img/g2.jpg'); }
 .year3 { background-image: url('img/g3.jpg'); }
@@ -1126,23 +1157,31 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .years-cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .years-cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 400px) {
   .year-card {
-    max-width: 90%;  /* الكارد يصغر تدريجيًا */
+    max-width: 340px;
+    height: 320px;
   }
 }
+
+@media (max-width: 480px) {
+  .years-cards {
+    grid-template-columns: 1fr;   /* كارد واحد */
+    justify-items: center;        /* في النص */
+  }
+
+  .year-card {
+    max-width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 360px) {
+  .year-card {
+    max-width: 280px;
+    height: 280px;
+  }
+}
+
 
 
         
@@ -1487,8 +1526,8 @@
 
         .fixed-sidebar a {
             color: var(--text-color);
-            width: 50px;
-            height: 50px;
+            width: 35px;
+            height: 35px;
             display: flex;
             justify-content: center;
             align-items: center;
